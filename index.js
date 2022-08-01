@@ -37,10 +37,10 @@ const questions = [
         message: 'Enter test instructions'
     },
     {
-        type: 'input',
+        type: 'list',
         name: 'license',
         message: 'Select a user license',
-        choices: ['none',]
+        choices: ['apache', 'mit', 'no license']
     },
     {
         type: 'input',
@@ -63,7 +63,7 @@ const init = () => {
     return inquirer
         .prompt(questions)
         .then((data) => {
-            return writeToFile ('./README.md', generateMarkdown(data));
+            return writeToFile ('./dist/generated-README.md', generateMarkdown(data));
         })
         .catch (err => console.log(err));
 }
