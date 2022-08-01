@@ -30,7 +30,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license !== 'no license') {
     return `
-  ## License
+  ## [License](#table-of-contents)
 
   This application is covered under the following license:
 
@@ -49,7 +49,7 @@ function generateMarkdown (data) {
 
 ${renderLicenseBadge(data.license)}
 
-## Table of Contents
+## Table-of-Contents
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
@@ -57,24 +57,31 @@ ${renderLicenseBadge(data.license)}
 * [Tests](#tests)
 * [Questions](#questions)
 
-## Description
+
+## [Description](#table-of-contents)
 ${data.description}
+
           
-## Installation
+## [Installation](#table-of-contents)
 ${data.installation}
 
-## Usage 
+
+## [Usage](#table-of-contents)
 ${data.usage}
+
 
 ${renderLicenseSection(data.license)}
 
-## Contributing
+
+## [Contributing](#table-of-contents)
 ${data.contributing}
 
-## Test Instructions
+
+## [Tests](#table-of-contents)
 ${data.tests}
 
-## Questions
+
+## [Questions](#table-of-contents)
 View my GitHub repository at
 [${data.github}](https://github.com/${data.github}/)
 

@@ -27,6 +27,12 @@ const questions = [
         message: 'Enter usage information'
     },
     {
+        type: 'list',
+        name: 'license',
+        message: 'Select a user license',
+        choices: ['Apache', 'MIT', 'no license']
+    },
+    {
         type: 'input',
         name: 'contributing',
         message: 'Enter contribution guidelines'
@@ -35,12 +41,6 @@ const questions = [
         type: 'input',
         name: 'tests',
         message: 'Enter test instructions'
-    },
-    {
-        type: 'list',
-        name: 'license',
-        message: 'Select a user license',
-        choices: ['Apache', 'MIT', 'no license']
     },
     {
         type: 'input',

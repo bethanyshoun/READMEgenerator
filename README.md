@@ -5,6 +5,9 @@ The purpose of this project was to create a professional readme generator using 
 
 The professional README generator allows a user to generate a markdown file containing all of the elements of a professional README. When started, the application asks a series of questions for the user to answer in order to complete each section of the file. Once completed, the generated file can be copied and pasted into the user's project README.md file or utilized in any other way desired.
 
+## App Functionality
+### Sample README File Screenshot
+
 ### See Video Walkthrough Demonstration:
 [Walkthrough Video Demonstration](mailto:bethanyshoun@gmail.com)
 
